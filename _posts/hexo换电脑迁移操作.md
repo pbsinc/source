@@ -60,10 +60,9 @@ http://luckykun.com/work/2016-04-23/heoll-hexo.html
 	2.进入 source 文件夹，右键，选择 Git bash.
 	3.输入命令 git status，查看本地仓库状态。
 	(在状态报告中可以看到新建的 abc.md 文件出现在“Untracked files”下面。未跟踪的文件意味着Git在之前的提交中没有这些文件。)
-	4.输入命令 git add "abc.md"。 添加新文章到暂存区域。
+	4.输入命令 git add . 添加新文章到暂存区域。
 	5.输入命令 git commit -m "备注信息" 提交新添加的文章至本地仓库。
-	6.输入命令 git remote add origin https://github.com/pbsinc/source.git
-	7.输入命令 git push -u origin master 提交至远程仓库。
+	6.输入命令 git push -f 强行提交至远程仓库。
 	
 回到Github检查新添加的文章是否添加成功。到目前为止，博客移植的主要三个操作已经介绍完毕。简单回顾下整个流程：第一步是上传旧设备中的源文件到Github中。第二步是获取Github上源文件。第三步开始写作，撰写文章，生成站点文件然后发布，更新源文件到Github。
 
