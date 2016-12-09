@@ -4,8 +4,12 @@ date:
 categories: LeetCode
 tags: Easy
 ---
-Given a positive integer n, find the least number of perfect square numbers (for example, 1, 4, 9, 16, ...) which sum to n.
-For example, given n = 12, return 3 because 12 = 4 + 4 + 4; given n = 13, return 2 because 13 = 4 + 9.
+Determine whether an integer is a palindrome. Do this without extra space.
+Some hints:
+Could negative integers be palindromes? (ie, -1)
+If you are thinking of converting the integer to string, note the restriction of using extra space.
+You could also try reversing an integer. However, if you have solved the problem "Reverse Integer", you know that the reversed integer might overflow. How would you handle such case?
+There is a more generic way of solving this problem.
 <!-- more -->
 **思路：**
 转成string,前后比较；
