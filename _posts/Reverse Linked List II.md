@@ -19,7 +19,7 @@ Given m, n satisfy the following condition:
 假设有一个链表有1,2,3,4,5,6，6个节点。m=2，n=5。
 
 我们添加一个dummy节点，方便操作第一个节点。
-！[.](http://images.cnitblog.com/i/546654/201404/072244468407048.jpg)
+![.](http://images.cnitblog.com/i/546654/201404/072244468407048.jpg)
 首先让pre指向第m个节点前面那个，cur指向第m个节点，p1指向m的下一个节点，因为p1有可能是NULL，所以当p1不是NULL的时候，p2指向p1的下一个节点。
 
 上图画出了这几个指针指向情况的开始状态和我们希望的终止状态。
@@ -27,7 +27,7 @@ Given m, n satisfy the following condition:
 在最终状态下，再通过其中方框中的两步就可以我们需要的链表了。
 
 而cur，p1，p2三个指针在区间内向前移动并且将p1的next指向cur的过程则包含在一个for循环内部。如下：
-！[.](http://images.cnitblog.com/i/546654/201404/072249466684683.jpg)
+![.](http://images.cnitblog.com/i/546654/201404/072249466684683.jpg)
 ``` java
 /**
  * Definition for singly-linked list.
@@ -57,7 +57,8 @@ public class Solution {
 			p1.next = cur;
 			cur = p1;
 			p1 = p2;
-			if(p2!= null) p2 = p2.next;
+			if(p2!= null) //这里不能是p2.next！
+			    p2 = p2.next;
 		}
 		//将三部分连接起来
 		pre.next.next = p1;
