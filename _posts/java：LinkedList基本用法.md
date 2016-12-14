@@ -9,7 +9,7 @@ LinkedList的构造函数如下
 1. public LinkedList():  ——生成空的链表
 2. public LinkedList(Collection col):  复制构造函数
 <!-- more -->
-转：
+
 1、获取链表的第一个和最后一个元素
 ``` java
 import java.util.LinkedList;  
@@ -34,7 +34,7 @@ public class LinkedListTest{
 for (String str: lList) {  
       System.out.println(str);  
     }  
-	``` 
+``` 
 3、从链表生成子表
 ``` java
 List subl = lList.subList(1, 4);  
