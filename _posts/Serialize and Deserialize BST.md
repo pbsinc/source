@@ -10,7 +10,7 @@ The encoded string should be as compact as possible.
 Note: Do not use class member/global/static variables to store states. Your serialize and deserialize algorithms should be stateless.
 <!-- more -->
 **递归思路：**
-先序遍历二叉查找树，每次家兔“，“作为分隔符；
+先序遍历二叉查找树，每次ass“，“作为分隔符；
 放入queue队列，然后先序遍历构建二叉查找树
 ``` java
 public class Codec {
